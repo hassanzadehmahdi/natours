@@ -1,0 +1,59 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "Learning node",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "start:prod": "NODE_ENV=production nodemon server.js",
+    "debug": "ndb server.js",
+    "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js/ --out-file bundle.js",
+    "build:js": "parcel watch ./public/js/index.js --out-dir ./public/js/ --out-file bundle.js"
+  },
+  "author": "mahdi",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "axios": "^0.21.0",
+    "bcryptjs": "^2.4.3",
+    "browserify": "^17.0.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.0.1",
+    "express-rate-limit": "^5.2.3",
+    "helmet": "^4.2.0",
+    "helmet-csp": "^3.2.0",
+    "hpp": "^0.2.3",
+    "html-to-text": "^6.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "ma": "0.0.7",
+    "mapbox-gl": "^1.13.0",
+    "mongoose": "^5.11.8",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.17",
+    "nodemon": "^2.0.6",
+    "pug": "^3.0.0",
+    "sharp": "^0.26.3",
+    "slugify": "^1.4.6",
+    "stripe": "^8.129.0",
+    "validator": "^13.5.2",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.16.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-react": "^7.21.5",
+    "prettier": "^2.2.1"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  }
+}
